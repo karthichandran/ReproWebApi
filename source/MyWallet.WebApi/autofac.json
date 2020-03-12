@@ -1,0 +1,23 @@
+﻿{
+  "defaultAssembly": "RePro.Infrastructure",
+  "modules": [
+    {
+      "type": "RePro.WebApi.WebApiModule, RePro.WebApi",
+      "properties": {
+      }
+    },
+    {
+      "type": "RePro.Infrastructure.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "RePro.Infrastructure.EntityFrameworkDataAccess.EntityFrameworkModule",
+      "properties": {
+        //"ConnectionString": "Server=DESKTOP-0PJ1FAE;Database=RePro;Integrated Security=True"
+        /// "ConnectionString": "Server=localhost\\SQLEXPRESS;Database=repro;Trusted_Connection=True;MultipleActiveResultSets=true"
+        "ConnectionString": "Server=localhost\\SQLEXPRESS;Database=repro;Trusted_Connection=True;MultipleActiveResultSets=true"
+      }
+    }
+  ]
+}
